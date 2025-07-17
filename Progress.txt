@@ -5,31 +5,18 @@ Fulfillment Queue	x_1778869_it_eq.fulfiller
 My Assigned Requests	x_1778869_it_eq.fulfiller
   
 
-Users
-Alice ITEQ	Equipment Request Users	x_1778869_it_eq.x_1778869_it_eq.request_user
-Ben ITEQ	Equipment Fulfillers	x_1778869_it_eq.x_1778869_it_eq.fulfiller
-Carol ITEQ	Equipment Managers	x_1778869_it_eq.x_1778869_it_eq.manager
-David ITEQ	IT Equipment Admins	x_1778869_it_eq.x_1778869_it_eq.admin
-Emily ITEQ	Equipment Request Users	x_1778869_it_eq.x_1778869_it_eq.request_user
-Farhan ITEQ	Equipment Fulfillers	x_1778869_it_eq.x_1778869_it_eq.fulfiller
-Grace ITEQ	Equipment Managers	x_1778869_it_eq.x_1778869_it_eq.manager
-Hari ITEQ	IT Equipment Admins	x_1778869_it_eq.x_1778869_it_eq.admin
-
-
-
-
 Created an assignment rule on "Equipment Request" table. Not working at the moment.
 
 Defined three SLA in contract_sla table
-•	SLA Name: High Priority Equipment SLA
-	o	Duration: 1 Business Day
-	o	Start Condition: Status = Requested
-	o	Pause Condition: Status = On Hold
-	o	Stop Condition: Status = Fulfilled or Closed
-•	SLA Name: Medium Priority Equipment SLA
-	o	Duration: 3 Business Days
-•	SLA Name: Low Priority Equipment SLA
-	o	Duration: 5 Business Days
+SLA Name: High Priority Equipment SLA
+	Duration: 1 Business Day
+	Start Condition: Status = Requested
+	Pause Condition: Status = On Hold
+	Stop Condition: Status = Fulfilled or Closed
+SLA Name: Medium Priority Equipment SLA
+	Duration: 3 Business Days
+SLA Name: Low Priority Equipment SLA
+	Duration: 5 Business Days
 
 
 Email notifications done: 
