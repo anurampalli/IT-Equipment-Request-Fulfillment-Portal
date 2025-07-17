@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="d6228370c33a2a5049ccbd0ed40131a3" extends="task" label="Equipment Request" max_length="40" name="x_1778869_it_eq_equipment_request" type="collection">
+        <element attributes="encode_utf8=false" label="Equipment type" max_length="32" name="equipment_type" reference="x_1778869_it_eq_equipment_catalog" type="reference"/>
+        <element choice="3" default="1" label="Fulfillment status" max_length="40" name="fulfillment_status" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Closed" sequence="60" value="6"/>
+                <element inactive_on_update="false" label="In Progress" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="Requested" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Fulfilled" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="On Hold" sequence="50" value="5"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Justification" max_length="100" name="justification" type="string"/>
+        <element attributes="encode_utf8=false" label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element attributes="encode_utf8=false" label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="Fulfillment Manager" max_length="32" name="fulfillment_manager" reference="sys_user" reference_qual="roles=x_1778869_it_eq.x_1778869_it_eq.manager^EQ" reference_qual_condition="roles=x_1778869_it_eq.x_1778869_it_eq.manager^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Fulfillment notes" max_length="4000" name="fulfillment_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Delivery date" max_length="40" name="delivery_date" type="glide_date_time"/>
+    </element>
+</database>

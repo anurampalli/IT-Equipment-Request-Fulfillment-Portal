@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Benchmarks" name="Benchmarks">140f12e37f1132005f58108c3ffa9186</category>
+        <collection>task_sla</collection>
+        <condition table="task_sla">stageCHANGESTObreached^sla=85122a45c37a6a5049ccbd0ed4013163^ORsla=503d8ec9c3f66a5049ccbd0ed40131db^ORsla=86912e45c37a6a5049ccbd0ed40131f5^EQ<item display_value="Breached" endquery="false" field="stage" goto="false" newquery="false" operator="CHANGESTO" or="false" value="breached"/>
+            <item display_table="contract_sla" display_value="IT Equipment Low Priority SLA" endquery="false" field="sla" goto="false" newquery="false" operator="=" or="false" value="85122a45c37a6a5049ccbd0ed4013163"/>
+            <item display_table="contract_sla" display_value="IT Equipment High Priority SLA" endquery="false" field="sla" goto="false" newquery="false" operator="=" or="true" value="503d8ec9c3f66a5049ccbd0ed40131db"/>
+            <item display_table="contract_sla" display_value="IT Equipment Medium Priority SLA" endquery="false" field="sla" goto="false" newquery="false" operator="=" or="true" value="86912e45c37a6a5049ccbd0ed40131f5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>Dear ${task.fulfillment_manager}</p>
+<p>&nbsp;</p>
+<p>SLA ${sla} has been breached. Following are the details:</p>
+<p>Business elapsed percentage: ${business_percentage}</p>
+<p>Has breached: ${has_breached}</p>
+<p>Pause duration: ${pause_duration}</p>
+<p>Schedule: ${schedule}</p>
+<p>Task Number: ${task.number}</p>
+<p>&nbsp;</p>
+<p>Kind regards</p>
+<p>System Administrator</p>
+<p>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>IT Equipment SLA Breached</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>task.ref_x_1778869_it_eq_equipment_request.fulfillment_manager</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Equipment Fulfillment Request SLA has been breached</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-17 01:04:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2b5fbad1c3feaa5049ccbd0ed4013160</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>IT Equipment SLA Breached</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IT Equipment Request &amp;amp; Fulfilment Portal" source="x_1778869_it_eq">c1b572fcc3b62a5049ccbd0ed4013192</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Equipment Request &amp;amp; Fulfilment Portal">c1b572fcc3b62a5049ccbd0ed4013192</sys_scope>
+        <sys_update_name>sysevent_email_action_2b5fbad1c3feaa5049ccbd0ed4013160</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-17 01:20:00</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Employee notification template">1462e7ca918a3010f877b1d70a4d6a3d</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b6ff36bcc3f62a5049ccbd0ed40131cc" label="Equipment Catalog" max_length="40" name="x_1778869_it_eq_equipment_catalog" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Accessories" value="accessories"/>
+                <element inactive_on_update="false" label="Standing desk" value="standing_desk"/>
+                <element inactive_on_update="false" label="Monitor" value="monitor"/>
+                <element inactive_on_update="false" label="Wireless mouse" value="wireless_mouse"/>
+                <element inactive_on_update="false" label="Wireless keyboard" value="wireless_keyboard"/>
+                <element inactive_on_update="false" label="Laptop" value="laptop"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Is available" max_length="40" name="is_available" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Catalog Item Number" mandatory="true" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="300" name="description" type="string"/>
+        <element label="Cost estimate" max_length="15" name="cost_estimate" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Model number" max_length="40" name="model_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element label="Image" max_length="40" name="image" type="user_image"/>
+    </element>
+</database>

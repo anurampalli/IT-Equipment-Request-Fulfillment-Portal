@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 11:46:28</sys_created_on>
+        <sys_id>57220770c33a2a5049ccbd0ed401312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1778869_it_eq_equipment_request.x_1778869_it_eq.x_1778869_it_eq.admin</sys_name>
+        <sys_package display_value="IT Equipment Request &amp;amp; Fulfilment Portal" source="x_1778869_it_eq">c1b572fcc3b62a5049ccbd0ed4013192</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Equipment Request &amp;amp; Fulfilment Portal">c1b572fcc3b62a5049ccbd0ed4013192</sys_scope>
+        <sys_security_acl display_value="x_1778869_it_eq_equipment_request">17220770c33a2a5049ccbd0ed401312a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_57220770c33a2a5049ccbd0ed401312d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 11:46:28</sys_updated_on>
+        <sys_user_role display_value="x_1778869_it_eq.x_1778869_it_eq.admin" name="x_1778869_it_eq.x_1778869_it_eq.admin">4c09fe74c3f62a5049ccbd0ed401311c</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

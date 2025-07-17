@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>TM_User</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_1778869_it_eq_is_users</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-16 00:16:57</sys_created_on>
+        <sys_id>58cde1c1c3766a5049ccbd0ed40131d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TM_User</sys_name>
+        <sys_package display_value="IT Equipment Request &amp;amp; Fulfilment Portal" source="x_1778869_it_eq">c1b572fcc3b62a5049ccbd0ed4013192</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Equipment Request &amp;amp; Fulfilment Portal">c1b572fcc3b62a5049ccbd0ed4013192</sys_scope>
+        <sys_update_name>sys_transform_map_58cde1c1c3766a5049ccbd0ed40131d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-16 00:16:57</sys_updated_on>
+        <target_table>sys_user</target_table>
+    </sys_transform_map>
+</record_update>
