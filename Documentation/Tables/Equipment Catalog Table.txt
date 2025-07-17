@@ -1,0 +1,54 @@
+🧾 Purpose of Equipment Catalog:
+It’s a simple reference/master data table — like a lookup table for predefined options. It stores static or semi-static records like “Laptop,” “Monitor,” etc.
+
+🧱 Best Practice:
+
+Do not extend from Task (that’s for records needing workflow/state/SLA/etc.)
+
+Do not extend from cmdb_ci unless you're building a full-blown asset/configuration management model (which is not the current goal)
+
+📦 Table: Equipment Catalog
+Full Table Name: x\_1778869\_it\_eq\_equipment\_catalog
+Extends: None (this is a reference/master data table, so no need to extend Task)
+
+🧱 Fields to Include:
+
+| Field Name     | Type            | Notes                                                 |
+| -------------- | --------------- | ----------------------------------------------------- |
+| name           | String (Unique) | Name of the equipment item (e.g., Laptop, Monitor)    |
+| description    | String or HTML  | Optional description of the item                      |
+| image          | Image           | (Optional) Upload image for catalog display           |
+| is\_available  | Boolean         | Used for filtering only available items in requests   |
+| model\_number  | String          | Optional: For asset tracking or inventory integration |
+| category       | Choice          | Optional: e.g., Laptop, Accessories, Monitor, etc.    |
+| cost\_estimate | Decimal         | Optional: For approval logic or reporting             |
+
+📌 Naming Tip:
+Label: Equipment Catalog
+Name: equipment\_catalog
+Application: x\_1778869\_it\_eq
+
+🛡 Access Control Suggestions:
+
+| Role                             | Create | Read             | Update | Delete |
+| -------------------------------- | ------ | ---------------- | ------ | ------ |
+| x\_1778869\_it\_eq.admin         | ✅      | ✅                | ✅      | ✅      |
+| x\_1778869\_it\_eq.fulfiller     |        | ✅                |        |        |
+| x\_1778869\_it\_eq.request\_user |        | ✅ (for dropdown) |        |        |
+
+💡 Optional Enhancements:
+
+* Use a Display field like name so it shows up nicely in the Equipment Request form
+* Add a filter condition to only show available items in Reference Qualifier
+
+🎯 To Create in Studio:
+
+1. Create Application File → Table
+2. Label: Equipment Catalog
+   Name: equipment\_catalog
+   Extends Table: (None)
+3. Add fields listed above
+4. Set Display field: name
+5. Save the table
+
+Would you like help setting the Reference Qualifier for equipment\_type in the Request table next? Or shall we proceed with Access Controls?

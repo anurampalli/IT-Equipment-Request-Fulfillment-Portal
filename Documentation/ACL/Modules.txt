@@ -1,0 +1,7 @@
+Module	Required Role
+Submit Request	x_1778869_it_eq.request_user
+View My Requests	x_1778869_it_eq.request_user
+Fulfillment Queue	x_1778869_it_eq.fulfiller
+SLA Breach Alerts	x_1778869_it_eq.manager
+Dashboards	x_1778869_it_eq.manager
+Admin Configuration	x_1778869_it_eq.admin

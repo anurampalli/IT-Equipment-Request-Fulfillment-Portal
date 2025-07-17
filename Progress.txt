@@ -1,0 +1,40 @@
+Modules
+Submit Request	x_1778869_it_eq.request_user
+View My Requests	x_1778869_it_eq.request_user
+Fulfillment Queue	x_1778869_it_eq.fulfiller
+My Assigned Requests	x_1778869_it_eq.fulfiller
+  
+
+Users
+Alice ITEQ	Equipment Request Users	x_1778869_it_eq.x_1778869_it_eq.request_user
+Ben ITEQ	Equipment Fulfillers	x_1778869_it_eq.x_1778869_it_eq.fulfiller
+Carol ITEQ	Equipment Managers	x_1778869_it_eq.x_1778869_it_eq.manager
+David ITEQ	IT Equipment Admins	x_1778869_it_eq.x_1778869_it_eq.admin
+Emily ITEQ	Equipment Request Users	x_1778869_it_eq.x_1778869_it_eq.request_user
+Farhan ITEQ	Equipment Fulfillers	x_1778869_it_eq.x_1778869_it_eq.fulfiller
+Grace ITEQ	Equipment Managers	x_1778869_it_eq.x_1778869_it_eq.manager
+Hari ITEQ	IT Equipment Admins	x_1778869_it_eq.x_1778869_it_eq.admin
+
+
+
+
+Created an assignment rule on "Equipment Request" table. Not working at the moment.
+
+Defined three SLA in contract_sla table
+•	SLA Name: High Priority Equipment SLA
+	o	Duration: 1 Business Day
+	o	Start Condition: Status = Requested
+	o	Pause Condition: Status = On Hold
+	o	Stop Condition: Status = Fulfilled or Closed
+•	SLA Name: Medium Priority Equipment SLA
+	o	Duration: 3 Business Days
+•	SLA Name: Low Priority Equipment SLA
+	o	Duration: 5 Business Days
+
+
+Email notifications done: 
+Request Submitted	Requested by	Acknowledgement email with request ID
+Request Assigned	Assigned To	Equipment request assigned to you
+SLA Breached	Fulfillment Manager	SLA breach alert with request details (cannot see the field "fulfillment_manager" by dot walking. just type ${task.fulfillment_manager} to get the name - I am so proud I learned this ;-)
+Request Fulfilled	Requested by	Confirmation and feedback link
+

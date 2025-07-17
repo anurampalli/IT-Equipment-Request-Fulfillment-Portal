@@ -1,0 +1,5 @@
+Role Name	Display Name	Description
+x_1778869_it_eq.request_user	Request User	Can submit and view their own equipment requests; access KB articles.
+x_1778869_it_eq.fulfiller	IT Fulfiller	Can view and fulfill assigned equipment requests; access reports.
+x_1778869_it_eq.manager	IT Manager	Can view all requests; receive SLA alerts; access dashboards.
+x_1778869_it_eq.admin	Equipment App Admin	Full access to app tables, configurations, flows, and dashboards.

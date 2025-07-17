@@ -1,0 +1,46 @@
+🧱 Step-by-Step: Create the Equipment Request Table
+
+Table Name: Equipment Request
+Table Label: Equipment Request
+Full Table Name: x\_1778869\_it\_eq\_equipment\_request
+Extends: Task (recommended — enables workflow, SLA, assignment, state, etc.)
+
+📌 Key Benefits of Extending Task:
+
+* Built-in fields like Assigned To, State, Priority, Short Description, Opened By, Opened At
+* Compatible with SLAs, Flow Designer, Notifications
+* Familiar structure for IT use cases
+
+📋 Suggested Fields (add these after choosing to extend from Task):
+
+| Field Name          | Type                                               | Notes                                                  |
+| ------------------- | -------------------------------------------------- | ------------------------------------------------------ |
+| requested\_for      | Reference → User                                   | The employee receiving the equipment                   |
+| equipment\_type     | Reference → x\_1778869\_it\_eq\_equipment\_catalog | Select from catalog table                              |
+| justification       | String (or Journal Input)                          | Optional free-text reason                              |
+| department          | Reference → cmn\_department                        | Useful for approval/SLA routing                        |
+| delivery\_date      | Date/Time                                          | When item was delivered                                |
+| fulfillment\_notes  | Journal Input                                      | Filled by fulfiller                                    |
+| fulfillment\_status | Choice                                             | Values: Requested, In Progress, Fulfilled, Cancelled   |
+
+🛡 Access Controls (to configure after creating the table)
+
+Use your Role Matrix:
+
+* Create: Only users with x\_1778869\_it\_eq.request\_user
+* Read: Requesters (own), Fulfillers, Managers, Admins
+* Update: Fulfillers (status, notes), Admins (all)
+* Delete: Admin only
+
+🎯 Next Actions:
+
+1. In Studio, go to Create Application File → Table
+2. Label: Equipment Request
+   Name: equipment\_request
+   Application Scope: x\_1778869\_it\_eq
+   Extends Table: Task
+3. Add custom fields listed above
+4. Save and open the table
+5. (Optional) Create corresponding list layout and form layout for usability
+
+Would you like me to give you the Access Control scripts or help with the catalog table next?

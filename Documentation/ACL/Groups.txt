@@ -1,0 +1,5 @@
+Group Name	Role Assigned (via Group > Roles)
+Equipment Request Users	x_1778869_it_eq.x_1778869_it_eq.request_user
+Equipment Fulfillers	x_1778869_it_eq.x_1778869_it_eq.fulfiller
+Equipment Managers	x_1778869_it_eq.x_1778869_it_eq.manager
+IT Equipment Admins	x_1778869_it_eq.x_1778869_it_eq.admin (inheriting all others)
