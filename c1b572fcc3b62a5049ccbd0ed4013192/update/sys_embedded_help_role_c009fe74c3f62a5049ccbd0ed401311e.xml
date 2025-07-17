@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_1778869_it_eq.x_1778869_it_eq.admin" name="x_1778869_it_eq.x_1778869_it_eq.admin">4c09fe74c3f62a5049ccbd0ed401311c</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-15 11:06:23</sys_created_on>
+        <sys_id>c009fe74c3f62a5049ccbd0ed401311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4c09fe74c3f62a5049ccbd0ed401311c</sys_name>
+        <sys_package display_value="IT Equipment Request &amp;amp; Fulfilment Portal" source="x_1778869_it_eq">c1b572fcc3b62a5049ccbd0ed4013192</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IT Equipment Request &amp;amp; Fulfilment Portal">c1b572fcc3b62a5049ccbd0ed4013192</sys_scope>
+        <sys_update_name>sys_embedded_help_role_c009fe74c3f62a5049ccbd0ed401311e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-15 11:06:23</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

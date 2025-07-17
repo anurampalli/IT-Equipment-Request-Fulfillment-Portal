@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Equipment Request" language="en" table="x_1778869_it_eq_equipment_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Equipment Request</label>
+            <language>en</language>
+            <name>x_1778869_it_eq_equipment_request</name>
+            <plural>Equipment Requests</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-15 11:46:24</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Equipment Request</sys_name>
+            <sys_package display_value="IT Equipment Request &amp;amp; Fulfilment Portal" source="x_1778869_it_eq">c1b572fcc3b62a5049ccbd0ed4013192</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="IT Equipment Request &amp;amp; Fulfilment Portal">c1b572fcc3b62a5049ccbd0ed4013192</sys_scope>
+            <sys_update_name>sys_documentation_x_1778869_it_eq_equipment_request__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-15 11:46:24</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
