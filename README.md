@@ -25,12 +25,12 @@ A ServiceNow custom scoped application that allows employees to request IT equip
 
 ## 🧱 Data Model
 
-* Table: x\_yourapp\_equipment\_request
+* Table: x\_1778869\_it\_eq\_equipment\_request extends task
 
-  * Fields: requested\_by, equipment\_type, justification, status, priority, assigned\_to, delivery\_date, fulfillment\_notes
-* Table: x\_yourapp\_equipment\_catalog
+  * Fields: requested\_for (reference sys\_user), fulfillment\_manager (reference sys\_user), equipment\_type (reference x\_1778869\_it\_eq\_equipment\_catalog), justification, status, priority, assigned\_to (reference sys\_user), delivery\_date, fulfillment\_notes, fulfillment\_status, department (reference cmn\_department)
+* Table: x\_1778869\_it\_eq\_equipment\_catalog
 
-  * Fields: equipment\_name, description, availability, image
+  * Fields: is\_available, number, description, cost\_estimate, model\_number, name, image
 
 ---
 
