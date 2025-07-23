@@ -17,14 +17,14 @@ A ServiceNow custom scoped application that allows employees to request IT equip
 - Email notifications for lifecycle events (submission, assignment, fulfillment, SLA breach)
 - Performance analytics with visual dashboards and reports
 - Knowledge Base integration with helpful articles for users
-- Approval and assignment workflows using Workflow Studio
+- Approval and assignment workflows using Flow Designer
 - Scoped application with Git integration
 
 ---
 
 ## 🧱 Data Model
 
-- Table: x_yourapp_equipment_request
+- Table: x_1778869_it_eq_equipment_request
 - Table: x_1778869_it_eq_equipment_request extends task
 
   - Fields: requested_for (reference sys_user), fulfillment_manager (reference sys_user), equipment_type (reference x_1778869_it_eq_equipment_catalog), justification, status, priority, assigned_to (reference sys_user), delivery_date, fulfillment_notes, fulfillment_status, department (reference cmn_department)
@@ -88,7 +88,7 @@ Each article is linked contextually on the request form and within the portal.
 
 ✅ Design and implement custom tables and relationships
 
-✅ Use Workflow Studio for notification and approval logic
+✅ Use Flow Designer for notification and approval logic
 
 ✅ Configure SLA definitions with pause/resume/stop conditions
 
