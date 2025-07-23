@@ -25,3 +25,11 @@ Request Assigned	Assigned To	Equipment request assigned to you
 SLA Breached	Fulfillment Manager	SLA breach alert with request details (cannot see the field "fulfillment_manager" by dot walking. just type ${task.fulfillment_manager} to get the name - I am so proud I learned this ;-)
 Request Fulfilled	Requested by	Confirmation and feedback link
 
+Created a business rule for assignment_group field on Equipment Request table.
+Name: CBR_auto_populate_assignment_group
+Used the following script where --fbe16dc1c3366a5049ccbd0ed4013139-- is the sys_id of "IT Equipment Fulfillers" group
+(function executeRule(current, previous /*null when async*/) {
+
+	current.assignment_group = 'fbe16dc1c3366a5049ccbd0ed4013139';
+
+})(current, previous);

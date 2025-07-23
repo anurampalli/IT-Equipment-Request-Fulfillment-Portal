@@ -2,7 +2,6 @@
 📁 Title: IT Equipment Request & Fulfillment Portal
 📌 Type: Scoped Application (Studio)
 🗃 Upload Target: GitHub repository (.xml or Update Set)
-
 ---
 
 # IT Equipment Request & Fulfillment Portal
@@ -13,24 +12,25 @@ A ServiceNow custom scoped application that allows employees to request IT equip
 
 ## 🚀 Project Features
 
-* Custom data model with Equipment Request, Catalog, and Fulfillment records
-* SLA definitions based on request priority
-* Email notifications for lifecycle events (submission, assignment, fulfillment, SLA breach)
-* Performance analytics with visual dashboards and reports
-* Knowledge Base integration with helpful articles for users
-* Approval and assignment workflows using Flow Designer
-* Scoped application with Git integration
+- Custom data model with Equipment Request, Catalog, and Fulfillment records
+- SLA definitions based on request priority
+- Email notifications for lifecycle events (submission, assignment, fulfillment, SLA breach)
+- Performance analytics with visual dashboards and reports
+- Knowledge Base integration with helpful articles for users
+- Approval and assignment workflows using Workflow Studio
+- Scoped application with Git integration
 
 ---
 
 ## 🧱 Data Model
 
-* Table: x\_yourapp\_equipment\_request
+- Table: x_yourapp_equipment_request
 
-  * Fields: requested\_by, equipment\_type, justification, status, priority, assigned\_to, delivery\_date, fulfillment\_notes
-* Table: x\_yourapp\_equipment\_catalog
+  - Fields: requested_by, equipment_type, justification, status, priority, assigned_to, delivery_date, fulfillment_notes
 
-  * Fields: equipment\_name, description, availability, image
+- Table: x_yourapp_equipment_catalog
+
+  - Fields: equipment_name, description, availability, image
 
 ---
 
@@ -47,10 +47,10 @@ A ServiceNow custom scoped application that allows employees to request IT equip
 
 ## 📊 Reports & Dashboards
 
-* Pie Chart: Requests by Priority
-* Bar Graph: SLA Compliance per Month
-* List: Requests Pending Approval
-* Scorecard: Average Fulfillment Time
+- Pie Chart: Requests by Priority
+- Bar Graph: SLA Compliance per Month
+- List: Requests Pending Approval
+- Scorecard: Average Fulfillment Time
 
 These reports are displayed on a centralized dashboard for IT managers.
 
@@ -60,10 +60,10 @@ These reports are displayed on a centralized dashboard for IT managers.
 
 Published articles include:
 
-* “How to Submit an Equipment Request”
-* “Expected Delivery Times by Equipment Type”
-* “Troubleshooting Your Laptop or Monitor”
-* “Contact IT Support”
+- “How to Submit an Equipment Request”
+- “Expected Delivery Times by Equipment Type”
+- “Troubleshooting Your Laptop or Monitor”
+- “Contact IT Support”
 
 Each article is linked contextually on the request form and within the portal.
 
@@ -87,7 +87,7 @@ Each article is linked contextually on the request form and within the portal.
 
 ✅ Design and implement custom tables and relationships
 
-✅ Use Flow Designer for notification and approval logic
+✅ Use Workflow Studio for notification and approval logic
 
 ✅ Configure SLA definitions with pause/resume/stop conditions
 
@@ -113,9 +113,7 @@ Each article is linked contextually on the request form and within the portal.
 
 ## 📂 Repository Structure
 
-* /update_sets/
-* /screenshots/
-* /documentation/
-* README.md
-
-
+- /update_sets/
+- /screenshots/
+- /documentation/
+- README.md
